@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "3A2YFJLZ6C.com.brunomiranda.lenabus",
+        "paths": [
+          "/meta-callback",
+          "/meta-callback/*"
+        ]
+      }
+    ]
+  }
+}
