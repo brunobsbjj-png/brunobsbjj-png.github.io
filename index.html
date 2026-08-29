@@ -12,21 +12,30 @@
 </head>
 <body>
 
-<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<a class="pular" href="#conteudo" data-en="Skip to content">Pular para o conteúdo</a>
 
 <header class="topo">
   <div class="envelope">
     <a class="marca" href="/">VISION<span class="destaque">GUARDIAN</span></a>
-    <nav aria-label="Principal">
-      <ul>
-        <li><a href="#historia">A história</a></li>
-        <li><a href="#apps">Aplicativos</a></li>
-        <li><a href="#engenharia">Engenharia</a></li>
-        <li><a href="#medicao">Medição</a></li>
-        <li><a href="#quem">Quem fez</a></li>
-        <li><a href="suporte.html">Suporte</a></li>
-      </ul>
-    </nav>
+
+    <div class="topo-direita">
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#historia" data-en="The story">A história</a></li>
+          <li><a href="#apps" data-en="Apps">Aplicativos</a></li>
+          <li><a href="#engenharia" data-en="Engineering">Engenharia</a></li>
+          <li><a href="#medicao" data-en="Measured">Medição</a></li>
+          <li><a href="#quem" data-en="Who built it">Quem fez</a></li>
+          <li><a href="suporte.html" data-en="Support">Suporte</a></li>
+        </ul>
+      </nav>
+
+      <div class="idiomas" role="group" aria-label="Idioma da página / Page language">
+        <button type="button" data-idioma="pt" aria-pressed="true">Português</button>
+        <span aria-hidden="true">|</span>
+        <button type="button" data-idioma="en" aria-pressed="false">English</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -34,24 +43,27 @@
 
   <section class="abertura">
     <div class="envelope">
-      <p class="etiqueta">Acessibilidade · iOS · Visão computacional no aparelho</p>
-      <h1>Um ônibus que chega <span class="destaque">e diz o próprio nome</span>.</h1>
-      <p class="conduz">
+      <p class="etiqueta" data-en="Accessibility · iOS · On-device computer vision">Acessibilidade · iOS · Visão computacional no aparelho</p>
+
+      <h1 data-en="A bus that arrives &lt;span class=&quot;destaque&quot;&gt;and says its own name&lt;/span&gt;.">Um ônibus que chega <span class="destaque">e diz o próprio nome</span>.</h1>
+
+      <p class="conduz" data-en="Five iPhone apps that give independence back to people who cannot see. They read the bus sign and speak the route aloud. They warn about stairs before the step. They describe who is standing ahead. All of it inside the phone — no account, no cloud.">
         Cinco aplicativos de iPhone que devolvem autonomia a quem não
         enxerga. Leem o letreiro do ônibus e falam a linha em voz
         alta. Avisam da escada antes do degrau. Descrevem quem está à
         frente. Tudo dentro do telefone, sem conta e sem nuvem.
       </p>
+
       <div class="botoes">
-        <a class="botao botao-cheio" href="#historia">Por que isso existe</a>
-        <a class="botao botao-vazio" href="#engenharia">Como foi construído</a>
+        <a class="botao botao-cheio" href="#historia" data-en="Why this exists">Por que isso existe</a>
+        <a class="botao botao-vazio" href="#engenharia" data-en="How it was built">Como foi construído</a>
       </div>
 
       <ul class="numeros" aria-label="Resumo do projeto">
-        <li><strong>5</strong><span>aplicativos</span></li>
-        <li><strong>888</strong><span>linhas de ônibus mapeadas</span></li>
-        <li><strong>0</strong><span>anúncios errados nos testes</span></li>
-        <li><strong>0</strong><span>dados coletados</span></li>
+        <li><strong>5</strong><span data-en="apps">aplicativos</span></li>
+        <li><strong>888</strong><span data-en="bus routes mapped">linhas de ônibus mapeadas</span></li>
+        <li><strong>0</strong><span data-en="wrong announcements in testing">anúncios errados nos testes</span></li>
+        <li><strong>0</strong><span data-en="data collected">dados coletados</span></li>
       </ul>
     </div>
   </section>
@@ -60,10 +72,10 @@
 
   <section id="historia" class="historia">
     <div class="envelope">
-      <h2>A história</h2>
-      <p class="subtitulo">Não começou como projeto de programação.</p>
+      <h2 data-en="The story">A história</h2>
+      <p class="subtitulo" data-en="It did not start as a programming project.">Não começou como projeto de programação.</p>
 
-      <p>
+      <p data-en="&lt;strong&gt;Sirlene Ferreira de Souza&lt;/strong&gt;, Bruno's mother, is blind. Every day she faces things that sighted people never register as obstacles: the step that appears without warning, the person standing in the way, and the bus that pulls up without saying which one it is.">
         <strong>Sirlene Ferreira de Souza</strong>, mãe do Bruno, é
         deficiente visual. Todo dia ela enfrenta
         coisas que quem enxerga nem registra como obstáculo: o degrau
@@ -71,25 +83,25 @@
         o ônibus que encosta no ponto sem dizer qual é.
       </p>
 
-      <p>
+      <p data-en="Asking the driver works — when there is time. Often the bus stops, nobody says anything, and it drives away. &lt;strong&gt;An hour of waiting lost for want of three seconds of information.&lt;/strong&gt;">
         Perguntar ao motorista funciona — quando dá tempo. Muitas
         vezes o ônibus para, ninguém fala nada, e ele vai embora.
         <strong>Uma hora de espera perdida por falta de uma
         informação de três segundos.</strong>
       </p>
 
-      <blockquote class="citacao">
+      <blockquote class="citacao" data-en="“All I want is to help. I am not charging anything. My mother is blind and I really want to make her day easier.”">
         “A única coisa que eu quero é ajudar. Eu não estou cobrando
         nada. Minha mãe é deficiente visual e eu quero muito
         facilitar o dia a dia dela.”
       </blockquote>
 
-      <p class="nome-dela">
+      <p class="nome-dela" data-en="The app is named after her: &lt;strong&gt;Sir&lt;em&gt;lene&lt;/em&gt;&lt;/strong&gt; &amp;rarr; &lt;strong&gt;LENA&lt;/strong&gt;.">
         O nome do aplicativo vem dela: <strong>Sir<em>lene</em></strong>
         &rarr; <strong>LENA</strong>.
       </p>
 
-      <p>
+      <p data-en="Everything follows from that, including the technical decisions. The app &lt;strong&gt;stays silent by default&lt;/strong&gt; and only speaks when it is certain — because a wrong warning, said with confidence, is worse than silence. Someone who cannot check the screen depends entirely on the device being right.">
         É daí que vem tudo, inclusive as decisões técnicas. O
         aplicativo <strong>fica calado por padrão</strong> e só fala
         quando tem certeza — porque um aviso errado, dito com
@@ -103,8 +115,8 @@
 
   <section id="apps">
     <div class="envelope">
-      <h2>Os aplicativos</h2>
-      <p class="subtitulo">
+      <h2 data-en="The apps">Os aplicativos</h2>
+      <p class="subtitulo" data-en="Each one does a single thing, and does it well. Separate apps rather than modes inside one, so nobody has to find a menu before solving a problem.">
         Cada um faz uma coisa e faz bem. Aplicativos separados, e não
         modos dentro de um só, para ninguém precisar achar um menu
         antes de resolver o problema.
@@ -113,8 +125,8 @@
       <ul class="grade">
         <li class="cartao">
           <h3><span class="marcador m-azul" aria-hidden="true"></span> LENA BUS</h3>
-          <p class="papel">Transporte público</p>
-          <p>
+          <p class="papel" data-en="Public transport">Transporte público</p>
+          <p data-en="The camera watches the street and speaks up when a bus arrives. It reads the route number and destination from the sign and says them aloud. If it is the route you chose, it vibrates before speaking and tells you to signal. It also recognises when two buses arrive one behind the other.">
             A câmera olha a rua e avisa quando um ônibus chega. Lê o
             número e o destino no letreiro e fala em voz alta. Se for
             a linha escolhida, vibra antes de falar e diz para dar o
@@ -123,8 +135,8 @@
         </li>
         <li class="cartao">
           <h3><span class="marcador m-azul" aria-hidden="true"></span> Caminhada Segura</h3>
-          <p class="papel">Obstáculos e desníveis</p>
-          <p>
+          <p class="papel" data-en="Obstacles and drop-offs">Obstáculos e desníveis</p>
+          <p data-en="Warns about stairs going up, stairs going down, single steps and head-height obstacles. It uses the depth sensor to measure the slope of the ground — and when it cannot measure, it admits it does not know the direction instead of guessing.">
             Avisa de escada subindo, escada descendo, degrau e
             obstáculo na altura da cabeça. Usa o sensor de
             profundidade para medir a inclinação do chão — e, sem
@@ -134,8 +146,8 @@
         </li>
         <li class="cartao">
           <h3><span class="marcador m-verde" aria-hidden="true"></span> Como Eu Estou</h3>
-          <p class="papel">Espelho</p>
-          <p>
+          <p class="papel" data-en="Mirror">Espelho</p>
+          <p data-en="Look in the mirror and ask. It describes hair, clothes and make-up — &lt;strong&gt;without complimenting&lt;/strong&gt;. A device that says “you look great” to someone who cannot verify it is not being kind, it is being useless.">
             Olha no espelho e pergunta. Descreve cabelo, roupa e
             maquiagem — <strong>sem elogiar</strong>. Um aparelho que
             diz “você está ótima” para quem não pode conferir não é
@@ -144,8 +156,8 @@
         </li>
         <li class="cartao">
           <h3><span class="marcador m-ambar" aria-hidden="true"></span> Descreva a Pessoa</h3>
-          <p class="papel">Quem está à frente</p>
-          <p>
+          <p class="papel" data-en="Who is ahead">Quem está à frente</p>
+          <p data-en="Says approximate height, skin tone, hair and clothing. It describes what it sees, and stays quiet about whatever it could not see clearly.">
             Diz altura aproximada, tom de pele, cabelo e roupa.
             Descreve o que vê, e cala sobre o que não conseguiu ver
             direito.
@@ -153,8 +165,8 @@
         </li>
         <li class="cartao">
           <h3><span class="marcador m-azul" aria-hidden="true"></span> VisionGuardian</h3>
-          <p class="papel">Os quatro juntos</p>
-          <p>
+          <p class="papel" data-en="All four together">Os quatro juntos</p>
+          <p data-en="Brings everything together, with voice activation through Siri and a daily greeting with the weather forecast — once a day, the first time the app opens.">
             Reúne tudo, com comando por voz pela Siri e uma saudação
             com a previsão do tempo — uma vez por dia, na primeira
             vez que o app abre.
@@ -168,23 +180,23 @@
 
   <section id="engenharia">
     <div class="envelope">
-      <h2>Engenharia</h2>
-      <p class="subtitulo">
+      <h2 data-en="Engineering">Engenharia</h2>
+      <p class="subtitulo" data-en="Detection, text recognition, confirmation and speech all happen inside the phone. No image leaves the device, and nothing depends on an internet connection.">
         Detecção, leitura de texto, confirmação e voz acontecem
         dentro do telefone. Nenhuma imagem sai do aparelho, e nada
         depende de internet.
       </p>
 
       <div class="decisao">
-        <h3>Calar é uma decisão</h3>
+        <h3 data-en="Silence is a decision">Calar é uma decisão</h3>
         <div>
-          <p>
+          <p data-en="The app only speaks when the same reading repeats across several consecutive frames. A number read once is a &lt;em&gt;candidate&lt;/em&gt;; repeated, it becomes &lt;em&gt;probable&lt;/em&gt;; once confirmed, it becomes speech.">
             O aplicativo só fala quando a mesma leitura se repete em
             vários quadros seguidos. Um número lido uma vez é
             <em>candidato</em>; repetido, é <em>provável</em>;
             confirmado, vira voz.
           </p>
-          <p>
+          <p data-en="If the destination does not confirm, it speaks the number alone. It never completes the sentence with a destination it did not actually read.">
             Se o destino não confirmar, ele fala apenas o número.
             Nunca completa a frase com um destino que não leu.
           </p>
@@ -192,14 +204,14 @@
       </div>
 
       <div class="decisao">
-        <h3>A regra dos quatro dígitos</h3>
+        <h3 data-en="The four-digit rule">A regra dos quatro dígitos</h3>
         <div>
-          <p>
+          <p data-en="A partly hidden bus made the reading come out truncated: &lt;code&gt;611.1&lt;/code&gt; became &lt;code&gt;11.1&lt;/code&gt;, and the app confidently announced the wrong route.">
             Um ônibus meio encoberto fazia a leitura sair cortada:
             <code>611.1</code> virava <code>11.1</code>, e o app
             anunciava com toda a confiança uma linha errada.
           </p>
-          <p>
+          <p data-en="The fix was not better reading — it was knowing that such a number cannot exist. All &lt;span class=&quot;numero&quot;&gt;888&lt;/span&gt; routes in the Federal District have exactly four digits, without a single exception. Three digits means a truncated reading, and a truncated reading never becomes an announcement.">
             A saída não foi ler melhor — foi saber que aquilo não pode
             existir. As <span class="numero">888</span> linhas do
             Distrito Federal têm exatamente quatro dígitos, sem uma
@@ -210,15 +222,15 @@
       </div>
 
       <div class="decisao">
-        <h3>Um ônibus, ou dois?</h3>
+        <h3 data-en="One bus, or two?">Um ônibus, ou dois?</h3>
         <div>
-          <p>
+          <p data-en="The detector returns boxes, not vehicles: a single bus usually produces two or three. Counting boxes would make the app warn about a second bus that does not exist — and the person would let their own bus go by.">
             O detector devolve caixas, não veículos: um único ônibus
             costuma render duas ou três. Contar caixa faria o app
             avisar de um segundo ônibus inexistente — e a pessoa
             deixaria o dela passar.
           </p>
-          <p>
+          <p data-en="A second bus has to pass three tests: it must not overlap the first, it must be separated from it in the image, and it must repeat across four consecutive frames.">
             Um segundo ônibus precisa passar por três provas: não
             sobrepor o primeiro, estar separado dele na imagem, e
             repetir em quatro quadros seguidos.
@@ -227,16 +239,16 @@
       </div>
 
       <div class="decisao">
-        <h3>Corrigir sem inventar</h3>
+        <h3 data-en="Correct without inventing">Corrigir sem inventar</h3>
         <div>
-          <p>
+          <p data-en="The registered spelling fixes what the OCR read, word by word: &lt;code&gt;RODOVIARIA&lt;/code&gt; becomes &lt;code&gt;Rodoviária&lt;/code&gt;. But it never grows into &lt;code&gt;Rodoviária do Plano Piloto&lt;/code&gt;, because the sign did not show that.">
             A grafia cadastrada conserta o que o OCR leu, palavra por
             palavra: <code>RODOVIARIA</code> vira
             <code>Rodoviária</code>. Mas nunca cresce para
             <code>Rodoviária do Plano Piloto</code>, porque isso o
             letreiro não mostrou.
           </p>
-          <p>
+          <p data-en="And there is a suspicion band: &lt;code&gt;NALTINA&lt;/code&gt; sits at 0.70 similarity to &lt;code&gt;Planaltina&lt;/code&gt; — too close to be a different place, too far to be the same word. That is a fragment of a word, and it never becomes speech.">
             E existe uma faixa de suspeita: <code>NALTINA</code> fica
             a 0,70 de semelhança de <code>Planaltina</code> — perto
             demais para ser outro lugar, longe demais para ser a
@@ -246,14 +258,14 @@
       </div>
 
       <div class="decisao">
-        <h3>A fonte da imagem é intercambiável</h3>
+        <h3 data-en="The image source is interchangeable">A fonte da imagem é intercambiável</h3>
         <div>
-          <p>
+          <p data-en="The detector, the OCR, the voting and the speech do not know where the image comes from. The iPhone camera and Meta glasses come in through the same door.">
             O detector, o OCR, a votação e a voz não sabem de onde
             vem a imagem. Câmera do iPhone e óculos Meta entram pela
             mesma porta.
           </p>
-          <p>
+          <p data-en="Each source declares what it knows about itself: whether it has depth, whether the scene arrives mirrored. That is why the stair-direction warning disappears when the source has no way to measure — instead of the app assuming.">
             Cada fonte declara o que sabe sobre si: se tem
             profundidade, se a cena vem espelhada. É por isso que o
             aviso de direção da escada some quando a fonte não tem
@@ -263,16 +275,16 @@
       </div>
 
       <div class="decisao">
-        <h3>Feito para VoiceOver</h3>
+        <h3 data-en="Built for VoiceOver">Feito para VoiceOver</h3>
         <div>
-          <p>
+          <p data-en="The main buttons are 120 points tall and span the full width: a finger finds them without searching. Each one is &lt;em&gt;a single&lt;/em&gt; element for the screen reader — before, focus stopped on the icon, then on the label, and it seemed like two separate things.">
             Os botões principais têm 120 pontos de altura e ocupam a
             largura toda: o dedo encosta neles sem procurar. Cada um
             é <em>um</em> elemento para o leitor de tela — antes o
             foco parava no ícone, depois no texto, e parecia que eram
             duas coisas.
           </p>
-          <p>
+          <p data-en="And the app does not talk over VoiceOver. When it is running, warnings join its queue instead of two voices fighting over the speaker.">
             E o app não fala junto com o VoiceOver. Com ele ligado,
             os avisos entram na fila dele, em vez de duas vozes
             disputando o alto-falante.
@@ -286,8 +298,8 @@
 
   <section id="medicao">
     <div class="envelope">
-      <h2>O que foi medido — e o que não foi</h2>
-      <p class="subtitulo">
+      <h2 data-en="What was measured — and what was not">O que foi medido — e o que não foi</h2>
+      <p class="subtitulo" data-en="There is a test bench that runs on a computer using the app's real classes, so a change can be measured as better or worse instead of someone claiming it improved.">
         Há uma bancada que roda no computador com as classes reais do
         aplicativo, para medir se uma mudança melhorou ou piorou, em
         vez de alguém afirmar que melhorou.
@@ -296,22 +308,25 @@
       <div class="rolagem">
         <table>
           <thead>
-            <tr><th scope="col">O que</th><th scope="col">Resultado</th></tr>
+            <tr>
+              <th scope="col" data-en="What">O que</th>
+              <th scope="col" data-en="Result">Resultado</th>
+            </tr>
           </thead>
           <tbody>
-            <tr><td>Número da linha, em 17 cenas</td><td class="certo">16 corretas, zero anúncios errados</td></tr>
-            <tr><td>Destino, testes unitários</td><td class="certo">19 passando</td></tr>
-            <tr><td>Um ônibus ou dois</td><td class="certo">9 passando, 3 de falso positivo</td></tr>
-            <tr><td>Leitura cortada</td><td class="certo">nunca vira anúncio</td></tr>
-            <tr><td>Quadro de horários por foto</td><td class="certo">29 de 29 horários</td></tr>
-            <tr><td>Detecção do ônibus na imagem</td><td class="falta">nunca foi medida</td></tr>
-            <tr><td>VoiceOver, vibração e uso na rua</td><td class="falta">falta testar com pessoas</td></tr>
-            <tr><td>Óculos Meta em hardware real</td><td class="falta">não comprovado</td></tr>
+            <tr><td data-en="Route number, across 17 scenes">Número da linha, em 17 cenas</td><td class="certo" data-en="16 correct, zero wrong announcements">16 corretas, zero anúncios errados</td></tr>
+            <tr><td data-en="Destination, unit tests">Destino, testes unitários</td><td class="certo" data-en="19 passing">19 passando</td></tr>
+            <tr><td data-en="One bus or two">Um ônibus ou dois</td><td class="certo" data-en="9 passing, 3 of them false-positive cases">9 passando, 3 de falso positivo</td></tr>
+            <tr><td data-en="Truncated reading">Leitura cortada</td><td class="certo" data-en="never becomes an announcement">nunca vira anúncio</td></tr>
+            <tr><td data-en="Timetable board from a photo">Quadro de horários por foto</td><td class="certo" data-en="29 of 29 departure times">29 de 29 horários</td></tr>
+            <tr><td data-en="Bus detection in the image">Detecção do ônibus na imagem</td><td class="falta" data-en="never measured">nunca foi medida</td></tr>
+            <tr><td data-en="VoiceOver, haptics and street use">VoiceOver, vibração e uso na rua</td><td class="falta" data-en="not yet tested with people">falta testar com pessoas</td></tr>
+            <tr><td data-en="Meta glasses on real hardware">Óculos Meta em hardware real</td><td class="falta" data-en="not proven">não comprovado</td></tr>
           </tbody>
         </table>
       </div>
 
-      <p style="max-width:64ch; color:var(--apoio); margin-top:2rem;">
+      <p style="max-width:64ch; color:var(--apoio); margin-top:2rem;" data-en="Detection was not measured for a specific and honest reason: the vision model does not recognise drawn scenes. In one test it identified the headlights of a drawn bus as &lt;em&gt;“frisbee, 81% confidence”&lt;/em&gt;. Only real photographs can measure that, and they do not exist yet.">
         A detecção não foi medida por um motivo específico e honesto:
         o modelo de visão não reconhece cenas desenhadas. Num teste,
         identificou os faróis de um ônibus desenhado como
@@ -319,7 +334,10 @@
         isso, e ela ainda não existe.
       </p>
 
-      <div class="saida">
+      <div class="saida" data-en="half covered      expected 611.1     OCR read 11.1     →  the app STAYED SILENT
+
+announced the right number:   16/17
+FALSE POSITIVES:              0">
 metade tapada     esperava 611.1     OCR leu 11.1     →  o app CALOU
 
 anunciou o número certo:   16/17
@@ -332,11 +350,11 @@ FALSOS POSITIVOS:          0
 
   <section id="tecnico">
     <div class="envelope">
-      <h2>Feito com</h2>
+      <h2 data-en="Built with">Feito com</h2>
       <ul class="grade">
         <li class="cartao">
-          <h3>No aparelho</h3>
-          <p>
+          <h3 data-en="On the device">No aparelho</h3>
+          <p data-en="Swift and SwiftUI, iOS 17.2 or newer. Vision for detection and text recognition, Core ML for the object detector, AVFoundation for the camera, Core Motion for tilt, and the system's own speech synthesis.">
             Swift e SwiftUI, iOS 17.2 ou mais novo. Vision para
             detecção e leitura de texto, Core ML para o detector de
             objetos, AVFoundation para a câmera, Core Motion para a
@@ -344,8 +362,8 @@ FALSOS POSITIVOS:          0
           </p>
         </li>
         <li class="cartao">
-          <h3>Óculos inteligentes</h3>
-          <p>
+          <h3 data-en="Smart glasses">Óculos inteligentes</h3>
+          <p data-en="Optional support for Meta glasses, in beta. The image starts coming from them, while the detector, the reading and the speech stay the same — only the source changes. If the glasses drop out, the app falls back to the phone camera on its own.">
             Suporte opcional a óculos Meta, em beta. A imagem passa a
             vir deles, e o detector, a leitura e a voz continuam os
             mesmos — só a fonte muda. Se os óculos caem, o app volta
@@ -353,8 +371,8 @@ FALSOS POSITIVOS:          0
           </p>
         </li>
         <li class="cartao">
-          <h3>Sem servidor</h3>
-          <p>
+          <h3 data-en="No server">Sem servidor</h3>
+          <p data-en="There is no account, no login and no cloud in the main path. Camera, detection, reading and decision all happen on the phone, and they work without internet.">
             Não há conta, login nem nuvem no caminho principal.
             Câmera, detecção, leitura e decisão acontecem no
             telefone, e funcionam sem internet.
@@ -368,20 +386,20 @@ FALSOS POSITIVOS:          0
 
   <section id="quem">
     <div class="envelope">
-      <h2>Quem fez</h2>
-      <p class="subtitulo">
-        Bruno Miranda &mdash; Bacharelado em Engenharia de Software,
-        Western Governors University.
+      <h2 data-en="Who built it">Quem fez</h2>
+      <p class="subtitulo" data-en="Bruno Miranda — Software Engineering undergraduate student, Western Governors University.">
+        Bruno Miranda &mdash; Estudante de Bacharelado em Engenharia
+        de Software, Western Governors University.
       </p>
 
-      <p class="historia" style="max-width:64ch; color:var(--apoio); font-size:1.12rem;">
+      <p class="historia" style="max-width:64ch; color:var(--apoio); font-size:1.12rem;" data-en="I learned iOS development by building this. It was not a university assignment or a product to sell — it was a concrete problem in my mother's life, and I wanted to solve it.">
         Aprendi a programar para iOS construindo isto. Não era um
         exercício de faculdade nem um produto para vender — era
         um problema concreto na vida da minha mãe, e eu queria
         resolver.
       </p>
 
-      <p class="historia" style="max-width:64ch; color:var(--apoio); font-size:1.12rem;">
+      <p class="historia" style="max-width:64ch; color:var(--apoio); font-size:1.12rem;" data-en="What I learned most was not Swift. It was that in an accessibility app &lt;strong&gt;a wrong answer is worse than no answer&lt;/strong&gt;, and that nearly every engineering decision here came out of that sentence: confirm before speaking, admit when you do not know, and measure instead of claiming it got better.">
         O que mais aprendi não foi Swift. Foi que num aplicativo
         de acessibilidade <strong>a resposta errada é pior que
         resposta nenhuma</strong>, e que quase toda decisão de
@@ -391,7 +409,7 @@ FALSOS POSITIVOS:          0
       </p>
 
       <div class="botoes" style="margin-top:2rem;">
-        <a class="botao botao-vazio" href="mailto:brunomiranda.ios@gmail.com">Falar comigo</a>
+        <a class="botao botao-vazio" href="mailto:brunomiranda.ios@gmail.com" data-en="Get in touch">Falar comigo</a>
         <a class="botao botao-vazio" href="https://github.com/brunobsbjj-png">GitHub</a>
       </div>
     </div>
@@ -402,19 +420,108 @@ FALSOS POSITIVOS:          0
 <footer class="rodape">
   <div class="envelope">
     <ul>
-      <li><a href="suporte.html">Suporte</a></li>
-      <li><a href="privacy.html">Privacidade</a></li>
+      <li><a href="suporte.html" data-en="Support">Suporte</a></li>
+      <li><a href="privacy.html" data-en="Privacy">Privacidade</a></li>
       <li><a href="mailto:brunomiranda.ios@gmail.com">brunomiranda.ios@gmail.com</a></li>
     </ul>
-    <p>
+    <p data-en="VisionGuardian is built by Bruno Miranda, Software Engineering undergraduate student at Western Governors University. Non-commercial, no ads, no data collection.">
       VisionGuardian é feito por Bruno Miranda, estudante de
       Bacharelado em Engenharia de Software na Western Governors
-      University. Sem fins comerciais,
-      sem anúncios e sem coleta de dados.
+      University. Sem fins comerciais, sem anúncios e sem coleta
+      de dados.
     </p>
-    <p class="dedicatoria">Para Sirlene Ferreira de Souza.</p>
+    <p class="dedicatoria" data-en="For Sirlene Ferreira de Souza.">Para Sirlene Ferreira de Souza.</p>
   </div>
 </footer>
+
+<script>
+/* =====================================
+   TROCA DE IDIOMA, SEM SAIR DA PAGINA
+   =====================================
+
+   Cada trecho traduzível carrega o inglês em `data-en`. O
+   português é o que já está escrito no HTML — assim, se o
+   JavaScript não rodar, a página continua legível e completa,
+   em vez de ficar vazia.
+
+   O `lang` do documento muda junto. Isso não é detalhe: sem
+   ele, o VoiceOver lê o texto em inglês com pronúncia
+   portuguesa, e não se entende nada. Num site sobre
+   acessibilidade, errar isso seria constrangedor.
+*/
+(function () {
+  "use strict";
+
+  var CHAVE = "visionguardian.idioma";
+
+  var TITULOS = {
+    pt: {
+      titulo: "VisionGuardian — tecnologia que devolve autonomia a quem não enxerga",
+      descricao: "Cinco aplicativos iOS que identificam o ônibus que chega, avisam de escadas, descrevem pessoas e ajudam no espelho."
+    },
+    en: {
+      titulo: "VisionGuardian — technology that gives independence back to blind people",
+      descricao: "Five iOS apps that identify the arriving bus, warn about stairs, describe people and help at the mirror."
+    }
+  };
+
+  var trechos = document.querySelectorAll("[data-en]");
+  var botoes = document.querySelectorAll("[data-idioma]");
+
+  // Guarda o português antes de qualquer troca.
+  for (var i = 0; i < trechos.length; i++) {
+    trechos[i].setAttribute("data-pt", trechos[i].innerHTML);
+  }
+
+  function aplicar(idioma) {
+    var ingles = idioma === "en";
+
+    document.documentElement.lang = ingles ? "en" : "pt-BR";
+
+    for (var i = 0; i < trechos.length; i++) {
+      var el = trechos[i];
+      el.innerHTML = ingles
+        ? el.getAttribute("data-en")
+        : el.getAttribute("data-pt");
+    }
+
+    var t = ingles ? TITULOS.en : TITULOS.pt;
+    document.title = t.titulo;
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta) { meta.setAttribute("content", t.descricao); }
+
+    for (var j = 0; j < botoes.length; j++) {
+      botoes[j].setAttribute(
+        "aria-pressed",
+        botoes[j].getAttribute("data-idioma") === idioma ? "true" : "false"
+      );
+    }
+
+    try { localStorage.setItem(CHAVE, idioma); } catch (e) {}
+  }
+
+  for (var k = 0; k < botoes.length; k++) {
+    botoes[k].addEventListener("click", function () {
+      aplicar(this.getAttribute("data-idioma"));
+    });
+  }
+
+  // A escolha de antes vence. Sem escolha, segue o idioma do
+  // navegador — quem chega de fora do Brasil vê inglês na
+  // primeira vez, sem precisar procurar o botão.
+  var inicial = "pt";
+  try {
+    var salvo = localStorage.getItem(CHAVE);
+    if (salvo === "pt" || salvo === "en") {
+      inicial = salvo;
+    } else if (navigator.language && navigator.language.indexOf("pt") !== 0) {
+      inicial = "en";
+    }
+  } catch (e) {}
+
+  if (inicial === "en") { aplicar("en"); }
+})();
+</script>
 
 </body>
 </html>
