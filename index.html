@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VisionGuardian — tecnologia que devolve autonomia a quem não enxerga</title>
+<meta name="description" content="Cinco aplicativos iOS que identificam o ônibus que chega, avisam de escadas, descrevem pessoas e ajudam no espelho. Feitos por Bruno Miranda para a mãe dele.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="VisionGuardian">
+<meta property="og:description" content="Cinco aplicativos iOS que devolvem autonomia a pessoas cegas.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="envelope">
+    <a class="marca" href="/">VISION<span class="destaque">GUARDIAN</span></a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#historia">A história</a></li>
+        <li><a href="#apps">Aplicativos</a></li>
+        <li><a href="#engenharia">Engenharia</a></li>
+        <li><a href="#medicao">Medição</a></li>
+        <li><a href="suporte.html">Suporte</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="abertura">
+    <div class="envelope">
+      <p class="etiqueta">Acessibilidade · iOS · Visão computacional no aparelho</p>
+      <h1>Um ônibus que chega <span class="destaque">e diz o próprio nome</span>.</h1>
+      <p class="conduz">
+        Cinco aplicativos de iPhone que devolvem autonomia a quem não
+        enxerga. Leem o letreiro do ônibus e falam a linha em voz
+        alta. Avisam da escada antes do degrau. Descrevem quem está à
+        frente. Tudo dentro do telefone, sem conta e sem nuvem.
+      </p>
+      <div class="botoes">
+        <a class="botao botao-cheio" href="#historia">Por que isso existe</a>
+        <a class="botao botao-vazio" href="#engenharia">Como foi construído</a>
+      </div>
+
+      <ul class="numeros" aria-label="Resumo do projeto">
+        <li><strong>5</strong><span>aplicativos</span></li>
+        <li><strong>888</strong><span>linhas de ônibus mapeadas</span></li>
+        <li><strong>0</strong><span>anúncios errados nos testes</span></li>
+        <li><strong>0</strong><span>dados coletados</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="linha">
+
+  <section id="historia" class="historia">
+    <div class="envelope">
+      <h2>A história</h2>
+      <p class="subtitulo">Não começou como projeto de programação.</p>
+
+      <p>
+        A mãe do Bruno é deficiente visual. Todo dia ela enfrenta
+        coisas que quem enxerga nem registra como obstáculo: o degrau
+        que aparece sem aviso, a pessoa parada no meio do caminho, e
+        o ônibus que encosta no ponto sem dizer qual é.
+      </p>
+
+      <p>
+        Perguntar ao motorista funciona — quando dá tempo. Muitas
+        vezes o ônibus para, ninguém fala nada, e ele vai embora.
+        <strong>Uma hora de espera perdida por falta de uma
+        informação de três segundos.</strong>
+      </p>
+
+      <blockquote class="citacao">
+        “A única coisa que eu quero é ajudar. Eu não estou cobrando
+        nada. Minha mãe é deficiente visual e eu quero muito
+        facilitar o dia a dia dela.”
+      </blockquote>
+
+      <p>
+        É daí que vem tudo, inclusive as decisões técnicas. O
+        aplicativo <strong>fica calado por padrão</strong> e só fala
+        quando tem certeza — porque um aviso errado, dito com
+        confiança, é pior do que silêncio. Quem não pode conferir na
+        tela depende inteiramente de o aparelho estar certo.
+      </p>
+    </div>
+  </section>
+
+  <hr class="linha">
+
+  <section id="apps">
+    <div class="envelope">
+      <h2>Os aplicativos</h2>
+      <p class="subtitulo">
+        Cada um faz uma coisa e faz bem. Aplicativos separados, e não
+        modos dentro de um só, para ninguém precisar achar um menu
+        antes de resolver o problema.
+      </p>
+
+      <ul class="grade">
+        <li class="cartao">
+          <h3><span class="marcador m-azul" aria-hidden="true"></span> LENA BUS</h3>
+          <p class="papel">Transporte público</p>
+          <p>
+            A câmera olha a rua e avisa quando um ônibus chega. Lê o
+            número e o destino no letreiro e fala em voz alta. Se for
+            a linha escolhida, vibra antes de falar e diz para dar o
+            sinal. Reconhece quando vêm dois ônibus em fila.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3><span class="marcador m-azul" aria-hidden="true"></span> Caminhada Segura</h3>
+          <p class="papel">Obstáculos e desníveis</p>
+          <p>
+            Avisa de escada subindo, escada descendo, degrau e
+            obstáculo na altura da cabeça. Usa o sensor de
+            profundidade para medir a inclinação do chão — e, sem
+            conseguir medir, admite que não sabe a direção em vez de
+            chutar.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3><span class="marcador m-verde" aria-hidden="true"></span> Como Eu Estou</h3>
+          <p class="papel">Espelho</p>
+          <p>
+            Olha no espelho e pergunta. Descreve cabelo, roupa e
+            maquiagem — <strong>sem elogiar</strong>. Um aparelho que
+            diz “você está ótima” para quem não pode conferir não é
+            gentil, é inútil.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3><span class="marcador m-ambar" aria-hidden="true"></span> Descreva a Pessoa</h3>
+          <p class="papel">Quem está à frente</p>
+          <p>
+            Diz altura aproximada, tom de pele, cabelo e roupa.
+            Descreve o que vê, e cala sobre o que não conseguiu ver
+            direito.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3><span class="marcador m-azul" aria-hidden="true"></span> VisionGuardian</h3>
+          <p class="papel">Os quatro juntos</p>
+          <p>
+            Reúne tudo, com comando por voz pela Siri e uma saudação
+            com a previsão do tempo — uma vez por dia, na primeira
+            vez que o app abre.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="linha">
+
+  <section id="engenharia">
+    <div class="envelope">
+      <h2>Engenharia</h2>
+      <p class="subtitulo">
+        Detecção, leitura de texto, confirmação e voz acontecem
+        dentro do telefone. Nenhuma imagem sai do aparelho, e nada
+        depende de internet.
+      </p>
+
+      <div class="decisao">
+        <h3>Calar é uma decisão</h3>
+        <div>
+          <p>
+            O aplicativo só fala quando a mesma leitura se repete em
+            vários quadros seguidos. Um número lido uma vez é
+            <em>candidato</em>; repetido, é <em>provável</em>;
+            confirmado, vira voz.
+          </p>
+          <p>
+            Se o destino não confirmar, ele fala apenas o número.
+            Nunca completa a frase com um destino que não leu.
+          </p>
+        </div>
+      </div>
+
+      <div class="decisao">
+        <h3>A regra dos quatro dígitos</h3>
+        <div>
+          <p>
+            Um ônibus meio encoberto fazia a leitura sair cortada:
+            <code>611.1</code> virava <code>11.1</code>, e o app
+            anunciava com toda a confiança uma linha errada.
+          </p>
+          <p>
+            A saída não foi ler melhor — foi saber que aquilo não pode
+            existir. As <span class="numero">888</span> linhas do
+            Distrito Federal têm exatamente quatro dígitos, sem uma
+            exceção. Três dígitos é leitura cortada, e leitura cortada
+            não vira anúncio.
+          </p>
+        </div>
+      </div>
+
+      <div class="decisao">
+        <h3>Um ônibus, ou dois?</h3>
+        <div>
+          <p>
+            O detector devolve caixas, não veículos: um único ônibus
+            costuma render duas ou três. Contar caixa faria o app
+            avisar de um segundo ônibus inexistente — e a pessoa
+            deixaria o dela passar.
+          </p>
+          <p>
+            Um segundo ônibus precisa passar por três provas: não
+            sobrepor o primeiro, estar separado dele na imagem, e
+            repetir em quatro quadros seguidos.
+          </p>
+        </div>
+      </div>
+
+      <div class="decisao">
+        <h3>Corrigir sem inventar</h3>
+        <div>
+          <p>
+            A grafia cadastrada conserta o que o OCR leu, palavra por
+            palavra: <code>RODOVIARIA</code> vira
+            <code>Rodoviária</code>. Mas nunca cresce para
+            <code>Rodoviária do Plano Piloto</code>, porque isso o
+            letreiro não mostrou.
+          </p>
+          <p>
+            E existe uma faixa de suspeita: <code>NALTINA</code> fica
+            a 0,70 de semelhança de <code>Planaltina</code> — perto
+            demais para ser outro lugar, longe demais para ser a
+            mesma palavra. Isso é pedaço de palavra, e não vira voz.
+          </p>
+        </div>
+      </div>
+
+      <div class="decisao">
+        <h3>A fonte da imagem é intercambiável</h3>
+        <div>
+          <p>
+            O detector, o OCR, a votação e a voz não sabem de onde
+            vem a imagem. Câmera do iPhone e óculos Meta entram pela
+            mesma porta.
+          </p>
+          <p>
+            Cada fonte declara o que sabe sobre si: se tem
+            profundidade, se a cena vem espelhada. É por isso que o
+            aviso de direção da escada some quando a fonte não tem
+            como medir — em vez de o app supor.
+          </p>
+        </div>
+      </div>
+
+      <div class="decisao">
+        <h3>Feito para VoiceOver</h3>
+        <div>
+          <p>
+            Os botões principais têm 120 pontos de altura e ocupam a
+            largura toda: o dedo encosta neles sem procurar. Cada um
+            é <em>um</em> elemento para o leitor de tela — antes o
+            foco parava no ícone, depois no texto, e parecia que eram
+            duas coisas.
+          </p>
+          <p>
+            E o app não fala junto com o VoiceOver. Com ele ligado,
+            os avisos entram na fila dele, em vez de duas vozes
+            disputando o alto-falante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="linha">
+
+  <section id="medicao">
+    <div class="envelope">
+      <h2>O que foi medido — e o que não foi</h2>
+      <p class="subtitulo">
+        Há uma bancada que roda no computador com as classes reais do
+        aplicativo, para medir se uma mudança melhorou ou piorou, em
+        vez de alguém afirmar que melhorou.
+      </p>
+
+      <div class="rolagem">
+        <table>
+          <thead>
+            <tr><th scope="col">O que</th><th scope="col">Resultado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Número da linha, em 17 cenas</td><td class="certo">16 corretas, zero anúncios errados</td></tr>
+            <tr><td>Destino, testes unitários</td><td class="certo">19 passando</td></tr>
+            <tr><td>Um ônibus ou dois</td><td class="certo">9 passando, 3 de falso positivo</td></tr>
+            <tr><td>Leitura cortada</td><td class="certo">nunca vira anúncio</td></tr>
+            <tr><td>Quadro de horários por foto</td><td class="certo">29 de 29 horários</td></tr>
+            <tr><td>Detecção do ônibus na imagem</td><td class="falta">nunca foi medida</td></tr>
+            <tr><td>VoiceOver, vibração e uso na rua</td><td class="falta">falta testar com pessoas</td></tr>
+            <tr><td>Óculos Meta em hardware real</td><td class="falta">não comprovado</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="max-width:64ch; color:var(--apoio); margin-top:2rem;">
+        A detecção não foi medida por um motivo específico e honesto:
+        o modelo de visão não reconhece cenas desenhadas. Num teste,
+        identificou os faróis de um ônibus desenhado como
+        <em>“frisbee, 81% de confiança”</em>. Só fotografia real mede
+        isso, e ela ainda não existe.
+      </p>
+
+      <div class="saida">
+metade tapada     esperava 611.1     OCR leu 11.1     →  o app CALOU
+
+anunciou o número certo:   16/17
+FALSOS POSITIVOS:          0
+      </div>
+    </div>
+  </section>
+
+  <hr class="linha">
+
+  <section id="tecnico">
+    <div class="envelope">
+      <h2>Feito com</h2>
+      <ul class="grade">
+        <li class="cartao">
+          <h3>No aparelho</h3>
+          <p>
+            Swift e SwiftUI, iOS 17.2 ou mais novo. Vision para
+            detecção e leitura de texto, Core ML para o detector de
+            objetos, AVFoundation para a câmera, Core Motion para a
+            inclinação, e a síntese de voz do próprio sistema.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3>Óculos inteligentes</h3>
+          <p>
+            Suporte opcional a óculos Meta, em beta. A imagem passa a
+            vir deles, e o detector, a leitura e a voz continuam os
+            mesmos — só a fonte muda. Se os óculos caem, o app volta
+            sozinho para a câmera do telefone.
+          </p>
+        </li>
+        <li class="cartao">
+          <h3>Sem servidor</h3>
+          <p>
+            Não há conta, login nem nuvem no caminho principal.
+            Câmera, detecção, leitura e decisão acontecem no
+            telefone, e funcionam sem internet.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="envelope">
+    <ul>
+      <li><a href="suporte.html">Suporte</a></li>
+      <li><a href="privacy.html">Privacidade</a></li>
+      <li><a href="mailto:brunomiranda.ios@gmail.com">brunomiranda.ios@gmail.com</a></li>
+    </ul>
+    <p>
+      VisionGuardian é feito por Bruno Miranda. Sem fins comerciais,
+      sem anúncios e sem coleta de dados.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+/* =====================================
+   LENA BUS — estilo do site
+   =====================================
+
+   Um site sobre acessibilidade que não fosse acessível
+   seria uma contradição. Então: contraste alto, foco
+   visível, ordem de leitura que faz sentido sem enxergar,
+   e nada que dependa só de cor.
+*/
+
+:root {
+  --ceu-topo: #0d1428;
+  --ceu-meio: #070a16;
+  --ceu-fim:  #03040a;
+
+  --texto:    #ffffff;
+  --apoio:    rgba(255, 255, 255, 0.78);
+  --fraco:    rgba(255, 255, 255, 0.55);
+
+  --azul:     #4b9bff;
+  --verde:    #34c9a8;
+  --ambar:    #ffb829;
+
+  --cartao:   rgba(255, 255, 255, 0.06);
+  --borda:    rgba(255, 255, 255, 0.14);
+
+  --largura:  min(72rem, 92vw);
+  --raio:     18px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg,
+    var(--ceu-topo) 0%,
+    var(--ceu-meio) 55%,
+    var(--ceu-fim) 100%) no-repeat;
+  background-attachment: fixed;
+  color: var(--texto);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* O primeiro elemento focável leva direto ao conteúdo.
+   Quem navega por teclado ou leitor de tela não precisa
+   passar pelo menu inteiro em toda página. */
+.pular {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--azul);
+  color: #001026;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  border-radius: 0 0 var(--raio) 0;
+  z-index: 100;
+}
+.pular:focus { left: 0; }
+
+:focus-visible {
+  outline: 3px solid var(--ambar);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.envelope { width: var(--largura); margin: 0 auto; }
+
+/* ---------- CABECALHO ---------- */
+
+.topo {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--borda);
+}
+
+.topo .envelope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca {
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.06em;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.topo nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topo nav a {
+  color: var(--apoio);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.topo nav a:hover,
+.topo nav a:focus-visible { color: var(--texto); border-bottom-color: var(--azul); }
+
+/* ---------- ABERTURA ---------- */
+
+.abertura { padding: clamp(3rem, 9vw, 6.5rem) 0 3.5rem; }
+
+.abertura h1 {
+  font-size: clamp(2.2rem, 6.5vw, 4rem);
+  line-height: 1.12;
+  margin: 0 0 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  max-width: 20ch;
+}
+
+.abertura .conduz {
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  color: var(--apoio);
+  max-width: 58ch;
+  margin: 0 0 2.2rem;
+}
+
+.destaque { color: var(--azul); }
+
+.botoes { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+.botao {
+  display: inline-block;
+  padding: 0.95rem 1.7rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 1.02rem;
+}
+
+.botao-cheio { background: var(--azul); color: #001026; }
+.botao-cheio:hover, .botao-cheio:focus-visible { background: #6fb0ff; }
+
+.botao-vazio { border-color: var(--borda); color: var(--texto); }
+.botao-vazio:hover, .botao-vazio:focus-visible { border-color: var(--azul); }
+
+/* ---------- SECOES ---------- */
+
+section { padding: 3.5rem 0; }
+
+section > .envelope > h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.subtitulo {
+  color: var(--apoio);
+  max-width: 62ch;
+  margin: 0 0 2.4rem;
+}
+
+.linha { border: 0; border-top: 1px solid var(--borda); margin: 0; }
+
+/* ---------- HISTORIA ---------- */
+
+.historia p {
+  max-width: 62ch;
+  font-size: 1.12rem;
+  color: var(--apoio);
+}
+
+.historia p strong { color: var(--texto); font-weight: 600; }
+
+.citacao {
+  border-left: 4px solid var(--ambar);
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  margin: 2.2rem 0;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  color: var(--texto);
+  font-weight: 600;
+  max-width: 46ch;
+}
+
+/* ---------- GRADE ---------- */
+
+.grade {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartao {
+  background: var(--cartao);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.6rem;
+}
+
+.cartao h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cartao p { margin: 0; color: var(--apoio); font-size: 0.99rem; }
+
+.marcador {
+  width: 0.6rem; height: 0.6rem; border-radius: 50%;
+  flex: 0 0 auto;
+}
+.m-azul  { background: var(--azul); }
+.m-verde { background: var(--verde); }
+.m-ambar { background: var(--ambar); }
+
+/* ---------- DECISOES ---------- */
+
+.decisao {
+  border-top: 1px solid var(--borda);
+  padding: 2rem 0;
+  display: grid;
+  gap: 0.6rem 2.5rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 46rem) {
+  .decisao { grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); }
+}
+
+.decisao h3 { margin: 0; font-size: 1.15rem; }
+.decisao p { margin: 0; color: var(--apoio); max-width: 62ch; }
+.decisao p + p { margin-top: 0.9rem; }
+
+.numero {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  color: var(--azul);
+}
+
+/* ---------- TABELA ---------- */
+
+.rolagem { overflow-x: auto; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 30rem;
+  margin-top: 1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+th { color: var(--texto); font-weight: 700; }
+td { color: var(--apoio); }
+td.certo { color: var(--verde); font-weight: 600; }
+td.falta { color: var(--ambar); font-weight: 600; }
+
+/* ---------- CODIGO ---------- */
+
+.saida {
+  background: rgba(0, 0, 0, 0.42);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 1.2rem 1.4rem;
+  overflow-x: auto;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--apoio);
+  margin: 1.4rem 0;
+}
+
+/* ---------- RODAPE ---------- */
+
+.rodape {
+  border-top: 1px solid var(--borda);
+  padding: 2.6rem 0 3.4rem;
+  color: var(--fraco);
+  font-size: 0.95rem;
+}
+
+.rodape a { color: var(--apoio); }
+
+.rodape ul {
+  display: flex; flex-wrap: wrap; gap: 1.6rem;
+  list-style: none; padding: 0; margin: 0 0 1.4rem;
+}
+
+a { color: var(--azul); }
+
+/* ---------- PAGINAS DE TEXTO ---------- */
+
+.documento { padding: 3rem 0 4rem; }
+.documento h1 { font-size: clamp(1.9rem, 4.5vw, 2.6rem); margin: 0 0 0.4rem; }
+.documento .data { color: var(--fraco); margin: 0 0 2.5rem; }
+.documento h2 { font-size: 1.35rem; margin: 2.6rem 0 0.7rem; }
+.documento p, .documento li { color: var(--apoio); max-width: 68ch; }
+.documento li { margin-bottom: 0.5rem; }
+
+/* ---------- ACRESCENTADO PARA O VISIONGUARDIAN ---------- */
+
+.etiqueta {
+  color: var(--fraco);
+  font-size: 0.92rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 1.2rem;
+}
+
+/* Os números do topo. Cada um é um item de lista de verdade,
+   para o leitor de tela anunciar "lista com 4 itens" e a
+   pessoa saber quanta coisa vem pela frente. */
+.numeros {
+  list-style: none;
+  padding: 0;
+  margin: 3.2rem 0 0;
+  display: grid;
+  gap: 1.6rem 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  border-top: 1px solid var(--borda);
+  padding-top: 2rem;
+}
+
+.numeros li { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.numeros strong {
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--azul);
+  font-variant-numeric: tabular-nums;
+}
+
+.numeros span {
+  color: var(--apoio);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.papel {
+  color: var(--fraco) !important;
+  font-size: 0.86rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 700;
+  margin: 0 0 0.7rem !important;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.12em 0.4em;
+  border-radius: 5px;
+  color: var(--texto);
+}
+
+.marca .destaque { color: var(--azul); }
+
+.cartao { transition: border-color 0.2s ease, transform 0.2s ease; }
+.cartao:hover { border-color: rgba(255, 255, 255, 0.3); }
+
+@media (prefers-reduced-motion: reduce) {
+  .cartao { transition: none; }
+}
